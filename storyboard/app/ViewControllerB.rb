@@ -5,7 +5,7 @@ class ViewControllerB < UIViewController
 	def viewDidLoad
 		puts 'View B Appeared'
 
-		dismissBtn = self.view.viewWithTag( TAG_DISMISS_BTN ) #UIBarButtonItem.alloc.initWithTitle( "Done", style:UIBarButtonItemStylePlain, target:self, action:"onDoneBtnPressed:" )
+		dismissBtn = self.view.viewWithTag( TAG_DISMISS_BTN )
 		dismissBtn.addTarget( self, action: 'onDismissBtnPressed:', forControlEvents: UIControlEventTouchUpInside )
 
 	end
